@@ -1,0 +1,215 @@
+.logined{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+
+}
+.profile{
+    box-shadow: 5px 5px 9px 3px rgba(0, 0, 0, 0.5);
+}
+.id-card {
+    width: 300px;
+    background-color: #f9f9f9;
+    border-radius: 13px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+.id-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+.id-card h2 {
+    margin: 10px 0;
+}
+.id-card p {
+    margin: 5px 0;
+}
+.regeister{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.regeister::before{
+    content: "";
+    background-color: #CBDDEB;
+    position:absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 50%;
+    margin-left: -13%;
+    width: 50%;
+    transform:  rotateZ(41deg) scale(1.5, 1.5) translate(3px, -2px);
+
+}
+.container{
+    display: flex;
+    position: relative;
+    
+    
+}
+.left{
+    width:100%;
+    height: 100%;
+    /* background-color: #3E4E50; */   
+}
+.-right{
+    margin:0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+button{
+    padding: 13px;
+    background-color: blue;
+    border-radius: 5px;
+}
+.container2{
+   
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    position: absolute;
+    margin: 50px 0 0 0;
+    padding: 50px 30px 30px 30px;
+   
+    top: 0;
+    align-items:start;
+    justify-content: start;
+    border-radius: 5px;
+}
+.image{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+h2{
+    margin: 20px 0;
+}
+form{
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    
+
+}
+.form-group{
+    text-align: start;
+    padding:10px 0 0px 0;
+    width: 100%;
+    position: relative;
+}
+.input-group{
+    margin: 0;
+}
+.input-group{
+    /* border: 1px solid #1f8df5; */
+}
+
+.input-group.invalid{
+    border: 1px solid #f02805;
+}
+/* .input-icon{
+    display: -ms-flexbox; 
+    display: flex;
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgb(232, 240, 254);
+    border: 1px solid rgb(51, 231, 126);
+  }
+  
+  .input-icon img {
+    width: 45px;
+    height: 45px;
+    padding: 0px 5px 0px 5px;
+    
+    color: white;
+    min-width: 50px;
+    text-align: center;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+  } */
+
+/*  */
+i{
+    color: red;
+}
+
+.error-visible {
+    display: block;
+  }
+  
+  .error-hidden {
+    display: none;
+  }
+  
+input[type="name"],input[type="email"],input[type="tel"]{
+    padding:13px;
+    width: 90%;
+    border-radius: 5px;
+    background-color: rgb(232, 240, 254);
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #5FF005;
+    /* You can change the border color to any desired color when the input is focused */
+}
+h1{
+    margin: 0;
+}
+@media screen and (max-width: 200px) {
+    .container2{
+
+        background-color: #99aab5;
+        width: 20%;
+    }
+}
+@media screen and (max-width: 425px) {
+    .container{
+        font-size: 15px;
+    }
+    .container2{
+        background-color: #99aab5;
+        width: 80%;
+    }
+}
+@media screen and (max-width: 1023px) {
+    .container2{
+        background-color: #99aab5;
+    }
+}
+@media screen and (max-width: 1023px) {
+
+    .left{
+        display:none;
+    }
+    .regeister::before{
+        display: none;
+    }
+}

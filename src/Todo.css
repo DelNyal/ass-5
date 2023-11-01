@@ -1,0 +1,78 @@
+.todo-container {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .todo-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #007bff; 
+    outline: none; 
+    border-radius: 5px;
+    border: 2px solid blue; 
+  }
+  .todo-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .delete-icon {
+    cursor: pointer;
+    color: red;
+    margin-left: 10px;
+  }
+  /* Hide the default checkbox */
+.styled-checkbox {
+    display: none;
+  }
+  
+  /* Style the custom checkbox container */
+  .checkbox-label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+  }
+  
+  /* Style the custom checkbox */
+  .checkbox-label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #2196F3;
+    border-radius: 4px;
+    background-color: white;
+  }
+  
+  /* Style the custom checkbox when checked */
+  .styled-checkbox:checked + .checkbox-label:before {
+    background-color: #2196F3;
+    border-color: #2196F3;
+  }
+  
+  /* Style the checkmark inside the custom checkbox */
+  .styled-checkbox:checked + .checkbox-label:before:after {
+    content: '\2713';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: white;
+  }
+  

@@ -1,0 +1,64 @@
+.converter {
+    
+    display: flex;
+    /* flex-direction: column; */
+    align-items: start;
+    justify-content: start;
+    margin: 50px;
+   
+  }
+  .convert{
+    --bg:27 57 169;
+    background-color: #99aab5;
+    
+
+  }
+  .cover{
+    display: flex;
+    
+  }
+  .input-group {
+    width: 40%;
+    /* margin: 10px; */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    border: none;
+  }
+  .unit{
+    position: absolute;
+    padding-right: 10px;
+
+  }
+  label {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    
+  }
+  .switch-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .switch-btn img {
+    width: 30px;
+    height: 30px;
+  }
+  @media screen and (max-width: 450px) {
+
+    .cover{
+        font-size: 10px;
+    }
+    .convert{
+        padding: 100px;
+    }
+    .switch-btn img {
+        width: 20px;
+        height: 20px;
+      }
+  }
+  /* Add additional styles as needed */
+  
