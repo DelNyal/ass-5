@@ -8,6 +8,7 @@ const Formcomponent = () => {
     handleInputChange,
     handleColorChange,
     handleSubmit,
+    isDarkTheme
   } = useAppContext();
   const [isNameValid, setIsNameValid] = useState(true);
   const [nameError, setNameError] = useState(false);
@@ -15,6 +16,15 @@ const Formcomponent = () => {
     e.preventDefault();
     handleSubmit();
   };
+  const buttonStyle={
+    background:formData.color,
+    ...(isDarkTheme ?{
+    color:"white",
+    border: `1px solid white`
+    }:{
+      color:"black",
+      border: `1px solid black`})
+  }
   return (
     <>
       {formData.isLogin && (
@@ -28,7 +38,7 @@ const Formcomponent = () => {
             <h2>{formData.name}</h2>
             <p>Email: {formData.email}</p>
             <p>Phone: {formData.phone}</p>
-            <button onClick={handleSubmit}>Go Back</button>
+            <button style={buttonStyle} onClick={handleSubmit}>Go Back</button>
           </div>
         </div>
       )}
@@ -108,10 +118,12 @@ const Formcomponent = () => {
                       type="radio"
                       name="color"
                       value="red"
+                      id="red"
+                      
                       checked={formData.color === "red"}
                       onChange={handleColorChange}
                     />{" "}
-                    Red
+                    <span style={{color:"red"}}>Red</span>
                     <input
                       type="radio"
                       name="color"
@@ -119,7 +131,7 @@ const Formcomponent = () => {
                       checked={formData.color === "green"}
                       onChange={handleColorChange}
                     />{" "}
-                    Green
+                    <span style={{color:"green"}}>Green</span>
                     <input
                       type="radio"
                       name="color"
@@ -127,7 +139,7 @@ const Formcomponent = () => {
                       checked={formData.color === "blue"}
                       onChange={handleColorChange}
                     />{" "}
-                    Blue
+                    <span style={{color:"blue"}}>Blue</span>
                     <input
                       type="radio"
                       name="color"
@@ -135,9 +147,9 @@ const Formcomponent = () => {
                       checked={formData.color === "yellow"}
                       onChange={handleColorChange}
                     />{" "}
-                    Yellow
+                    <span style={{color:"yellow"}}>Yellow</span>
                   </div>
-                  <button type="submit">Register</button>
+                  <button className="myButton" type="submit">Register</button>
                 </form>
               </div>
             </div>

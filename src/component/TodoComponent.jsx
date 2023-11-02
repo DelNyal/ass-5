@@ -38,7 +38,7 @@ const TodoComponent = () => {
                 className="styled-checkbox"
                 onChange={()=> updateCheckedStatus(todo.id)}
               />
-              <p style={{ textDecoration: todo.checked ? 'line-through' : 'none' }}>
+              <p onClick={()=> updateCheckedStatus(todo.id)} style={{ textDecoration: todo.checked ? 'line-through' : 'none',cursor:"pointer" }}>
             {todo.text}
             </p>
               </div>

@@ -24,7 +24,7 @@
     height: 100px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 15px;
+   
 }
 .id-card h2 {
     margin: 10px 0;
@@ -76,10 +76,35 @@
     
 }
 button{
-    padding: 13px;
-    background-color: blue;
+    padding: 10px;
     border-radius: 5px;
 }
+.myButton {
+    margin: 10px 0 10px 0;
+	box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+	background-color:#79bbff;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:10px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+	background-color:#378de5;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
 .container2{
    
     max-width: 350px;
@@ -122,42 +147,14 @@ form{
 .input-group{
     margin: 0;
 }
-.input-group{
-    /* border: 1px solid #1f8df5; */
-}
 
 .input-group.invalid{
     border: 1px solid #f02805;
 }
-/* .input-icon{
-    display: -ms-flexbox; 
-    display: flex;
-    width: 100%;
-    border-radius: 5px;
-    background-color: rgb(232, 240, 254);
-    border: 1px solid rgb(51, 231, 126);
-  }
-  
-  .input-icon img {
-    width: 45px;
-    height: 45px;
-    padding: 0px 5px 0px 5px;
-    
-    color: white;
-    min-width: 50px;
-    text-align: center;
-  }
-  
-  .input-field {
-    width: 100%;
-    padding: 10px;
-    outline: none;
-    border: none;
-  } */
 
-/*  */
 i{
     color: red;
+    font-size: smaller;
 }
 
 .error-visible {
@@ -180,6 +177,9 @@ input:focus {
     border: 1px solid #5FF005;
     /* You can change the border color to any desired color when the input is focused */
 }
+input #red #text{
+    color: red;
+}
 h1{
     margin: 0;
 }
@@ -199,7 +199,7 @@ h1{
         width: 80%;
     }
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 769px) {
     .container2{
         background-color: #99aab5;
     }
